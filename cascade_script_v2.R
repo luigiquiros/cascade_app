@@ -9,6 +9,21 @@
 # Description:      Analyzes UHPLC-HRMS/MS data with semiquantitative information.
 # ===========================================================================================================================================================================================================
 
+#===================================== After clonning the repository==========================================================================================================================================
+
+#      cascade_app/
+#      └─── cascade_script_v2.R
+#      └─── data/
+#      |	     └─── in/
+#      |	           └─── sample_a_pos.mzML
+#      |       	     └─── sample_a_neg.mzML
+#      |      	     └─── sample_a_features_pos.csv
+#      |      	     └─── sample_a_features_neg.csv
+#      |      	     └─── sample_a_annotations_pos.tsv
+#      |      	     └─── sample_a_annotations_neg.tsv
+
+#==============================================================================================================================================================================================================
+
 #===================================== REQUIREMENTS ===========================================================================================================================================================
 
 #   A file (.mzML) containing DDA MS data with an additional detector (PDA, ELSD, CAD)
@@ -17,7 +32,7 @@
 #   A file (.tsv) containing annotations, as obtained by TIMA
 # ===========================================================================================================================================================================================================
 
-#===================================== INSTALLATION ===========================================================================================================================================================
+#===================================== INSTALLATION ==========================================================================================================================================================
 
 #install.packages(
 #  "cascade",
@@ -44,7 +59,7 @@
 
 # Define the main folder of your project and file names
  
- data_path <- "C:/Users/quirosgu/Documents/GitHub/cascade/data"              #"path/to/your/data"  # Define the path to your data
+ data_path <- "C:/Users/quirosgu/Documents/GitHub/cascade_app/data"           #"path/to/your/data"  # Define the path to your data
  filename_pos <- "calendula_pos.mzML"          #your indexed mzml in pos mode 
  filename_neg <- "calendula_neg.mzML"          #your indexed mzml in neg mode 
  feature_table_pos <- "calendula_pos_quant_full.csv"                #your MZmine features table in POS mod               #your MZmine features table in pos mode 
